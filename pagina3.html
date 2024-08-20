@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Belk Closet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Destaques</a></li>
+                    <li><a href="pagina2.html">Produtos</a></li>
+                    <li><a href="pagina3.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <img src="img2/logo.jfif" alt="Logo Belk Closet" class="logo">
+        </div>
+    </header>
+
+    <section id="contact-info" class="container">
+        <h2>Fale Conosco</h2>
+        <p>Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de qualquer assistência, entre em contato conosco através dos meios abaixo.</p>
+        
+        <div class="contact-methods">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>Envie um email para: <a href="mailto:@belkcloset.com.br">contato@belkcloset.com.br</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Telefone</h3>
+                <p>Telefone: (69) 9999-8000</p>
+            </div>
+            <div class="contact-item">
+                <h3>Endereço</h3>
+                <p>Av. Major Amarante, 444 - Vilhena, RO</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="container">
+        <h2>Envie uma Mensagem</h2>
+        <form action="process_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Belk Closet. Todos os direitos reservados.</p>
+            <p>Contato: <a href="mailto:contato@belkcloset.com.br">contato@belkcloset.com.br</a></p>
+        </div>
+    </footer>
+</body>
+</html>
